@@ -1,0 +1,22 @@
+<div id="app">
+    <ul>
+        <li v-for="course in crouses">
+            {{course.title}}
+        </li>
+    </ul>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.4/vue.js"></script>
+<script type="text/javascript">
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            courses: [{
+                title: 'Vue JS'
+            }, {
+                title: 'AAS'
+            }, {
+                title: 'JS'
+            }]
+        }
+    })
+</script>
